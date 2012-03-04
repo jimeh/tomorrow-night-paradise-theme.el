@@ -1,4 +1,4 @@
-;;; tomorrow-night-bright-theme.el --- custom theme for faces
+;;; tomorrow-night-paradise-theme.el --- custom theme for faces
 
 ;;; Commentary:
 ;;
@@ -10,7 +10,7 @@
 
 ;;; Code:
 
-(deftheme tomorrow-night-bright
+(deftheme tomorrow-night-paradise
   "A Pastel Coloured Theme")
 
 (let ((background "#000000")
@@ -28,7 +28,7 @@
       (purple "#c397d8"))
 
   (custom-theme-set-faces
-   'tomorrow-night-bright
+   'tomorrow-night-paradise
 
    ;; Built-in stuff (Emacs 23)
    `(default ((t (:background ,background :foreground ,foreground))))
@@ -66,7 +66,7 @@
    `(show-paren-mismatch ((t (:background ,orange :foreground ,current-line)))))
 
   (custom-theme-set-variables
-   'tomorrow-night-bright
+   'tomorrow-night-paradise
 
    `(ansi-color-names-vector
      ;; black, red, green, yellow, blue, magenta, cyan, white
@@ -75,6 +75,6 @@
      ;; black, red, green, yellow, blue, magenta, cyan, white
      [unspecified ,background ,red ,green ,yellow ,blue ,purple ,blue ,foreground])))
 
-(provide-theme 'tomorrow-night-bright)
+(provide-theme 'tomorrow-night-paradise)
 
-;;; tomorrow-night-bright-theme.el ends here
+;;; tomorrow-night-paradise-theme.el ends here
