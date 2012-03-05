@@ -37,6 +37,7 @@
    `(fringe ((t (:background ,current-line))))
    `(minibuffer-prompt ((t (:foreground ,blue))))
    `(mode-line ((t (:background ,current-line :foreground ,foreground))))
+   `(mode-line-inactive ((t (:background ,gray :foreground ,foreground))))
    `(region ((t (:background ,selection))))
 
    ;; Font-lock stuff
