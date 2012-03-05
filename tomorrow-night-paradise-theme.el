@@ -20,7 +20,8 @@
       (foreground "#dadada")
       (comment "#767676")
       (cursor "#949494")
-      (red "#d54e53")
+      (gray "#4e4e4e")
+      (red "#d54e53") (red-2 "#cd0000")
       (yellow "#e7c547")
       (orange "#e78700")
       (green "#afd75f")
@@ -39,6 +40,7 @@
    `(region ((t (:background ,selection))))
 
    ;; Font-lock stuff
+   `(font-lock-builtin-face ((t (:foreground ,blue))))
    `(font-lock-comment-face ((t (:foreground ,comment))))
    `(font-lock-constant-face ((t (:foreground ,green))))
    `(font-lock-doc-string-face ((t (:foreground ,comment))))
@@ -49,11 +51,44 @@
    `(font-lock-variable-name-face ((t (:foreground ,red))))
    `(font-lock-warning-face ((t (:foreground ,red))))
 
+   ;; ido
+   `(ido-only-match ((t (:foreground ,orange))))
+   `(ido-subdir ((t (:foreground ,purple))))
+
    ;; hl-line-mode
    `(hl-line ((t (:background ,current-line))))
 
    ;; linum-mode
    `(linum ((t (:background ,current-line :foreground ,foreground))))
+
+   ;; show-paren-mode
+   `(show-paren-match ((t (:background ,purple :foreground ,current-line))))
+   `(show-paren-mismatch ((t (:background ,orange :foreground ,current-line))))
+
+   ;; whitespace-mode
+   `(whitespace-newline ((t (:foreground ,gray))))
+   `(whitespace-hspace ((t (:foreground ,gray))))
+   `(whitespace-space ((t (:foreground ,gray))))
+   `(whitespace-tab ((t (:foreground ,gray))))
+   `(whitespace-line ((t (:background ,gray))))
+   `(whitespace-indentation ((t (:foreground ,gray))))
+   `(whitespace-space-after-tab ((t (:foreground ,gray))))
+
+   ;; flyspell-mode
+   `(flyspell-incorrect ((t (:foreground ,orange :underline ,orange))))
+   `(flyspell-duplicate ((t (:foreground ,orange :underline ,orange))))
+
+   ;; magit
+   `(magit-diff-add ((t (:foreground ,green))))
+   `(magit-diff-del ((t (:foreground ,red))))
+   `(magit-item-highlight ((t (:background ,current-line))))
+
+   ;; highlight-indentation-mode
+   `(highlight-indentation-face ((t (:background ,current-line))))
+   `(highlight-indentation-current-column-face ((t (:background ,current-line))))
+
+   ;; ECB
+   `(ecb-default-highlight-face ((t (:background ,red-2 :foreground ,current-line))))
 
    ;; org-mode
    `(org-date ((t (:foreground ,purple))))
@@ -61,13 +96,14 @@
    `(org-hide ((t (:foreground ,current-line))))
    `(org-link ((t (:foreground ,blue))))
    `(org-todo ((t (:foreground ,red))))
-
-   ;; show-paren-mode
-   `(show-paren-match ((t (:background ,blue :foreground ,current-line))))
-   `(show-paren-mismatch ((t (:background ,orange :foreground ,current-line)))))
+   )
 
   (custom-theme-set-variables
    'tomorrow-night-paradise
+
+   ;; Fill Column Indicator mode
+   `(fci-rule-color ,current-line)
+   `(fci-rule-character-color ,current-line)
 
    `(ansi-color-names-vector
      ;; black, red, green, yellow, blue, magenta, cyan, white
