@@ -2,7 +2,7 @@
 
 ;;; Commentary:
 ;;
-;;; Tomorrow Night Bright Theme
+;;; Tomorrow Night Paradise Theme
 ;;
 ;; My customized version of Chris Kempson's Tomorrow Night Bright theme:
 ;; https://github.com/ChrisKempson/Tomorrow-Theme
