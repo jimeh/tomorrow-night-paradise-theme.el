@@ -88,7 +88,7 @@
    `(highlight-indentation-current-column-face ((t (:background ,current-line))))
 
    ;; ECB
-   `(ecb-default-highlight-face ((t (:background ,red-2 :foreground ,current-line))))
+   `(ecb-default-highlight-face ((t (:background ,background :foreground ,red-2))))
 
    ;; org-mode
    `(org-date ((t (:foreground ,purple))))
