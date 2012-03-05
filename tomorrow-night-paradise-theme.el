@@ -4,9 +4,10 @@
 ;;
 ;;; Tomorrow Night Bright Theme
 ;;
-;; Originally by Chris Kempson https://github.com/ChrisKempson/Tomorrow-Theme
-;; Ported to GNU Emacs by Chris Charles
-;; Ported to GNU Emacs 24's built-in theme system by Jim Myhrberg (@jimeh)
+;; My customized version of Chris Kempson's Tomorrow Night Bright theme:
+;; https://github.com/ChrisKempson/Tomorrow-Theme
+;;
+;; --Jim Myhrberg (@jimeh)
 
 ;;; Code:
 
@@ -14,18 +15,18 @@
   "A Pastel Coloured Theme")
 
 (let ((background "#000000")
-      (current-line "#2a2a2a")
-      (selection "#424242")
-      (foreground "#dedede")
-      (comment "#969896")
-      (cursor "#9f9f9f")
+      (current-line "#1c1c1c")
+      (selection "#3a3a3a")
+      (foreground "#dadada")
+      (comment "#767676")
+      (cursor "#949494")
       (red "#d54e53")
-      (orange "#e78c45")
       (yellow "#e7c547")
-      (green "#b9ca4a")
-      (aqua "#70c0b1")
-      (blue "#7aa6da")
-      (purple "#c397d8"))
+      (orange "#e78700")
+      (green "#afd75f")
+      (aqua "#00cdcd")
+      (blue "#5f87d7")
+      (purple "#af87d7"))
 
   (custom-theme-set-faces
    'tomorrow-night-paradise
