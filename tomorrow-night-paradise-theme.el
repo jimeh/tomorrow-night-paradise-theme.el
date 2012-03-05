@@ -102,8 +102,8 @@
    'tomorrow-night-paradise
 
    ;; Fill Column Indicator mode
-   `(fci-rule-color ,current-line)
-   `(fci-rule-character-color ,current-line)
+   `(fci-rule-color ,gray)
+   `(fci-rule-character-color ,gray)
 
    `(ansi-color-names-vector
      ;; black, red, green, yellow, blue, magenta, cyan, white
