@@ -21,8 +21,8 @@
       (comment "#767676")
       (cursor "#949494")
       (gray "#4e4e4e")
-      (red "#d54e53") (red-2 "#cd0000")
-      (yellow "#e7c547")
+      (red "#d54e53") (red-2 "#cd0000") (red-3 "#5f0000")
+      (yellow "#e7c547") (yellow-2 "#cdcd00")
       (orange "#e78700")
       (green "#afd75f")
       (aqua "#00cdcd")
@@ -70,13 +70,15 @@
    `(show-paren-mismatch ((t (:background ,orange :foreground ,current-line))))
 
    ;; whitespace-mode
-   `(whitespace-newline ((t (:foreground ,gray))))
+   `(whitespace-empty ((t (:background ,yellow-2 :foreground ,red))))
    `(whitespace-hspace ((t (:foreground ,gray))))
-   `(whitespace-space ((t (:foreground ,gray))))
-   `(whitespace-tab ((t (:foreground ,gray))))
-   `(whitespace-line ((t (:background ,gray))))
    `(whitespace-indentation ((t (:foreground ,gray))))
+   `(whitespace-line ((t (:background ,gray))))
+   `(whitespace-newline ((t (:foreground ,gray))))
+   `(whitespace-space ((t (:foreground ,gray))))
    `(whitespace-space-after-tab ((t (:foreground ,gray))))
+   `(whitespace-tab ((t (:foreground ,gray))))
+   `(whitespace-trailing ((t (:background ,red-3 :foreground ,yellow))))
 
    ;; flyspell-mode
    `(flyspell-incorrect ((t (:foreground ,orange :underline ,orange))))
