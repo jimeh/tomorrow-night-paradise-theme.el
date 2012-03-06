@@ -44,12 +44,15 @@
    `(font-lock-builtin-face ((t (:foreground ,blue))))
    `(font-lock-comment-face ((t (:foreground ,comment))))
    `(font-lock-constant-face ((t (:foreground ,green))))
+   `(font-lock-doc-face ((t (:foreground ,comment))))
    `(font-lock-doc-string-face ((t (:foreground ,comment))))
    `(font-lock-function-name-face ((t (:foreground ,blue))))
    `(font-lock-keyword-face ((t (:foreground ,purple))))
+   `(font-lock-negation-char-face ((t (:foreground ,aqua))))
+   `(font-lock-preprocessor-face ((t (:foreground ,red))))
    `(font-lock-string-face ((t (:foreground ,green))))
    `(font-lock-type-face ((t (:foreground ,yellow))))
-   `(font-lock-variable-name-face ((t (:foreground ,red))))
+   `(font-lock-variable-name-face ((t (:foreground ,aqua))))
    `(font-lock-warning-face ((t (:foreground ,red))))
 
    ;; ido
