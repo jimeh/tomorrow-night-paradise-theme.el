@@ -41,6 +41,9 @@
    `(vertical-border ((t (:background ,selection :foreground ,selection))))
    `(region ((t (:background ,selection))))
 
+   ;; linum-mode
+   `(linum ((t (:background ,background :foreground ,selection))))
+
    ;; Font-lock stuff
    `(font-lock-builtin-face ((t (:foreground ,blue))))
    `(font-lock-comment-face ((t (:foreground ,comment))))
@@ -62,9 +65,6 @@
 
    ;; hl-line-mode
    `(hl-line ((t (:background ,current-line))))
-
-   ;; linum-mode
-   `(linum ((t (:background ,current-line :foreground ,foreground))))
 
    ;; show-paren-mode
    `(show-paren-match ((t (:background ,purple :foreground ,current-line))))
