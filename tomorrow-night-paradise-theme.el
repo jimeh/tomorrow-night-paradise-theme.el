@@ -15,12 +15,12 @@
   "A Pastel Coloured Theme")
 
 (let ((background "#000000")
-      (current-line "#1c1c1c")
+      (current-line "#121212")
       (selection "#3a3a3a")
       (foreground "#dadada")
       (comment "#767676")
       (cursor "#949494")
-      (gray "#4e4e4e")
+      (gray "#303030") (gray-2 "#1c1c1c")
       (red "#d54e53") (red-2 "#cd0000") (red-3 "#5f0000")
       (yellow "#e7c547") (yellow-2 "#cdcd00")
       (orange "#e78700")
@@ -32,17 +32,11 @@
   (custom-theme-set-faces
    'tomorrow-night-paradise
 
-   ;; Built-in stuff (Emacs 23)
+   ;; Basics
    `(default ((t (:background ,background :foreground ,foreground))))
-   `(fringe ((t (:background ,current-line))))
+   `(fringe ((t (:background ,gray-2))))
    `(minibuffer-prompt ((t (:foreground ,blue))))
-   `(mode-line ((t (:background ,current-line :foreground ,foreground))))
-   `(mode-line-inactive ((t (:background ,selection :foreground ,foreground))))
-   `(vertical-border ((t (:background ,selection :foreground ,selection))))
-   `(region ((t (:background ,selection))))
-
-   ;; linum-mode
-   `(linum ((t (:background ,background :foreground ,selection))))
+   `(hl-line ((t (:background ,current-line))))
 
    ;; Font-lock stuff
    `(font-lock-builtin-face ((t (:foreground ,blue))))
@@ -59,16 +53,22 @@
    `(font-lock-variable-name-face ((t (:foreground ,aqua))))
    `(font-lock-warning-face ((t (:foreground ,red))))
 
+   ;; UI related
+   `(mode-line ((t (:background ,selection :foreground ,foreground))))
+   `(mode-line-inactive ((t (:background ,gray-2 :foreground ,foreground))))
+   `(vertical-border ((t (:background ,background :foreground ,selection))))
+   `(region ((t (:background ,selection))))
+
+   ;; Linum
+   `(linum ((t (:background ,background :foreground ,selection))))
+
+   ;; show-paren-mode
+   `(show-paren-match ((t (:background ,purple :foreground ,gray-2))))
+   `(show-paren-mismatch ((t (:background ,orange :foreground ,gray-2))))
+
    ;; ido
    `(ido-only-match ((t (:foreground ,orange))))
    `(ido-subdir ((t (:foreground ,purple))))
-
-   ;; hl-line-mode
-   `(hl-line ((t (:background ,current-line))))
-
-   ;; show-paren-mode
-   `(show-paren-match ((t (:background ,purple :foreground ,current-line))))
-   `(show-paren-mismatch ((t (:background ,orange :foreground ,current-line))))
 
    ;; whitespace-mode
    `(whitespace-empty ((t (:background ,yellow-2 :foreground ,red))))
@@ -88,11 +88,11 @@
    ;; magit
    `(magit-diff-add ((t (:foreground ,green))))
    `(magit-diff-del ((t (:foreground ,red))))
-   `(magit-item-highlight ((t (:background ,current-line))))
+   `(magit-item-highlight ((t (:background ,gray-2))))
 
    ;; highlight-indentation-mode
-   `(highlight-indentation-face ((t (:background ,current-line))))
-   `(highlight-indentation-current-column-face ((t (:background ,current-line))))
+   `(highlight-indentation-face ((t (:background ,gray-2))))
+   `(highlight-indentation-current-column-face ((t (:background ,gray-2))))
 
    ;; ECB
    `(ecb-default-highlight-face ((t (:background ,background :foreground ,red-2))))
@@ -100,7 +100,7 @@
    ;; org-mode
    `(org-date ((t (:foreground ,purple))))
    `(org-done ((t (:foreground ,green))))
-   `(org-hide ((t (:foreground ,current-line))))
+   `(org-hide ((t (:foreground ,gray-2))))
    `(org-link ((t (:foreground ,blue))))
    `(org-todo ((t (:foreground ,red))))
    )
@@ -109,8 +109,8 @@
    'tomorrow-night-paradise
 
    ;; Fill Column Indicator mode
-   `(fci-rule-color ,gray)
-   `(fci-rule-character-color ,gray)
+   `(fci-rule-color ,gray-2)
+   `(fci-rule-character-color ,gray-2)
 
    `(ansi-color-names-vector
      ;; black, red, green, yellow, blue, magenta, cyan, white
