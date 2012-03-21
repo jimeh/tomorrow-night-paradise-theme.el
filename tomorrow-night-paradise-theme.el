@@ -15,12 +15,11 @@
   "A Pastel Coloured Theme")
 
 (let ((background "#000000")
-      (current-line "#121212")
       (selection "#3a3a3a")
       (foreground "#dadada")
-      (comment "#767676")
+      (comment "#4e4e4e")
       (cursor "#949494")
-      (gray "#303030") (gray-2 "#1c1c1c")
+      (gray "#303030") (gray-2 "#1c1c1c") (gray-3 "#121212")
       (red "#d54e53") (red-2 "#cd0000") (red-3 "#5f0000")
       (yellow "#e7c547") (yellow-2 "#cdcd00")
       (orange "#e78700")
@@ -34,9 +33,10 @@
 
    ;; Basics
    `(default ((t (:background ,background :foreground ,foreground))))
+   `(region ((t (:background ,selection))))
    `(fringe ((t (:background ,gray-2))))
    `(minibuffer-prompt ((t (:foreground ,blue))))
-   `(hl-line ((t (:background ,current-line))))
+   `(hl-line ((t (:background ,gray-3))))
 
    ;; Font-lock stuff
    `(font-lock-builtin-face ((t (:foreground ,blue))))
@@ -55,12 +55,11 @@
 
    ;; UI related
    `(mode-line ((t (:background ,selection :foreground ,foreground))))
-   `(mode-line-inactive ((t (:background ,gray-2 :foreground ,foreground))))
+   `(mode-line-inactive ((t (:background ,gray-3))))
    `(vertical-border ((t (:background ,background :foreground ,selection))))
-   `(region ((t (:background ,selection))))
 
    ;; Linum
-   `(linum ((t (:background ,background :foreground ,selection))))
+   `(linum ((t (:background ,background :foreground ,gray))))
 
    ;; show-paren-mode
    `(show-paren-match ((t (:background ,purple :foreground ,gray-2))))
@@ -72,13 +71,13 @@
 
    ;; whitespace-mode
    `(whitespace-empty ((t (:background ,yellow-2 :foreground ,red))))
-   `(whitespace-hspace ((t (:foreground ,gray))))
-   `(whitespace-indentation ((t (:foreground ,gray))))
-   `(whitespace-line ((t (:background ,gray))))
-   `(whitespace-newline ((t (:foreground ,gray))))
-   `(whitespace-space ((t (:foreground ,gray))))
-   `(whitespace-space-after-tab ((t (:foreground ,gray))))
-   `(whitespace-tab ((t (:foreground ,gray))))
+   `(whitespace-hspace ((t (:foreground ,gray-2))))
+   `(whitespace-indentation ((t (:foreground ,gray-2))))
+   `(whitespace-line ((t (:background ,gray-2))))
+   `(whitespace-newline ((t (:foreground ,gray-2))))
+   `(whitespace-space ((t (:foreground ,gray-2))))
+   `(whitespace-space-after-tab ((t (:foreground ,gray-2))))
+   `(whitespace-tab ((t (:foreground ,gray-2))))
    `(whitespace-trailing ((t (:background ,red-3 :foreground ,yellow))))
 
    ;; flyspell-mode
@@ -91,8 +90,8 @@
    `(magit-item-highlight ((t (:background ,gray-2))))
 
    ;; highlight-indentation-mode
-   `(highlight-indentation-face ((t (:background ,current-line))))
-   `(highlight-indentation-current-column-face ((t (:background ,current-line))))
+   `(highlight-indentation-face ((t (:background ,gray-3))))
+   `(highlight-indentation-current-column-face ((t (:background ,gray-2))))
 
    ;; ECB
    `(ecb-default-highlight-face ((t (:background ,background :foreground ,red-2))))
