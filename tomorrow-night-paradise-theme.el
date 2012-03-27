@@ -20,6 +20,7 @@
       (comment "#4e4e4e")
       (cursor "#949494")
       (gray "#303030") (gray-2 "#1c1c1c") (gray-3 "#121212")
+                       (gray-4 "#080808")
       (red "#d54e53") (red-2 "#cd0000") (red-3 "#5f0000")
       (yellow "#e7c547") (yellow-2 "#cdcd00")
       (orange "#e78700")
@@ -36,7 +37,7 @@
    `(region ((t (:background ,selection))))
    `(fringe ((t (:background ,gray-2))))
    `(minibuffer-prompt ((t (:foreground ,blue))))
-   `(hl-line ((t (:background ,gray-3))))
+   `(hl-line ((t (:background ,gray-4))))
 
    ;; Font-lock stuff
    `(font-lock-builtin-face ((t (:foreground ,blue))))
@@ -90,8 +91,8 @@
    `(magit-item-highlight ((t (:background ,gray-2))))
 
    ;; highlight-indentation-mode
-   `(highlight-indentation-face ((t (:background ,gray-3))))
-   `(highlight-indentation-current-column-face ((t (:background ,gray-2))))
+   `(highlight-indentation-face ((t (:background ,gray-4))))
+   `(highlight-indentation-current-column-face ((t (:background ,gray-3))))
 
    ;; ECB
    `(ecb-default-highlight-face ((t (:background ,background :foreground ,red-2))))
