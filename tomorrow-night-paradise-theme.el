@@ -37,7 +37,7 @@
    `(region ((t (:background ,selection))))
    `(fringe ((t (:background ,gray-2))))
    `(minibuffer-prompt ((t (:foreground ,blue))))
-   `(hl-line ((t (:background ,gray-4))))
+   `(hl-line ((t (:background ,gray-3))))
 
    ;; Font-lock stuff
    `(font-lock-builtin-face ((t (:foreground ,blue))))
@@ -91,8 +91,8 @@
    `(magit-item-highlight ((t (:background ,gray-2))))
 
    ;; highlight-indentation-mode
-   `(highlight-indentation-face ((t (:background ,gray-4))))
-   `(highlight-indentation-current-column-face ((t (:background ,gray-3))))
+   `(highlight-indentation-face ((t (:background ,gray-3))))
+   `(highlight-indentation-current-column-face ((t (:background ,gray-4))))
 
    ;; ECB
    `(ecb-default-highlight-face ((t (:background ,background :foreground ,red-2))))
