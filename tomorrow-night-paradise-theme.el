@@ -17,7 +17,7 @@
 (let ((background "#000000")
       (selection "#3a3a3a")
       (foreground "#dadada")
-      (comment "#4e4e4e")
+      (comment "#585858")
       (cursor "#949494")
       (gray "#303030") (gray-2 "#1c1c1c") (gray-3 "#121212")
                        (gray-4 "#080808")
