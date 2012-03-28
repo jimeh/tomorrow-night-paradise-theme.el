@@ -91,8 +91,8 @@
    `(magit-item-highlight ((t (:background ,gray-2))))
 
    ;; highlight-indentation-mode
-   `(highlight-indentation-face ((t (:background ,gray-3))))
-   `(highlight-indentation-current-column-face ((t (:background ,gray-4))))
+   `(highlight-indentation-face ((t (:background ,gray-4))))
+   `(highlight-indentation-current-column-face ((t (:background ,gray-3))))
 
    ;; ECB
    `(ecb-default-highlight-face ((t (:background ,background :foreground ,red-2))))
