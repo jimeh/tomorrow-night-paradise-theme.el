@@ -7,6 +7,11 @@
 ;; My customized version of Chris Kempson's Tomorrow Night Bright theme:
 ;; https://github.com/ChrisKempson/Tomorrow-Theme
 ;;
+;; Particularly colors have been adjusted to look right in a xterm-256color
+;; terminal. Additionally window borders have been given a more minimal look
+;; and face definitions have been added for various packages I use on a daily
+;; basis.
+;;
 ;; --Jim Myhrberg (@jimeh)
 
 ;;; Code:
