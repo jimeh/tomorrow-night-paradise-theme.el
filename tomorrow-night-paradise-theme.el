@@ -42,7 +42,7 @@
    `(region ((t (:background ,selection))))
    `(fringe ((t (:background ,gray-2))))
    `(minibuffer-prompt ((t (:foreground ,blue))))
-   `(hl-line ((t (:background ,gray-4))))
+   `(hl-line ((t (:background ,gray-3))))
 
    ;; Font-lock stuff
    `(font-lock-builtin-face ((t (:foreground ,blue))))
